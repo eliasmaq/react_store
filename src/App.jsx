@@ -1,5 +1,6 @@
 import React from "react";
 import {useEffect, useState} from "react";
+import Heading from "./components/Header";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -15,7 +16,7 @@ function App() {
   },[])
   console.log(user)
   return (
-    <h1>Hola sbitas</h1>
+    <Heading/>
   );
 }
 
