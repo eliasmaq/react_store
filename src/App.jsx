@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import CardItem from "./components/CardItem";
 
+import Heading from "./components/Header";
+
 
 function App() {
   const [user, setUser] = useState(null);
@@ -17,6 +19,8 @@ function App() {
   }, [])
   console.log(user)
   return (
+<>
+    <Heading/>
     <div style={{ display: "flex"}}>
       {user?.map((item, index) => (
         <CardItem
@@ -27,6 +31,7 @@ function App() {
         ></CardItem>
       ))}
     </div>
+    </>
   );
 }
 
