@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 import React from "react";
 import { useEffect, useState } from "react";
 import CardItem from "./components/CardItem";
@@ -6,8 +8,6 @@ import styled from "styled-components";
 const ContainerCard = styled("div")`
   display: flex;
 `;
-
-
 
 import Heading from "./components/Header";
 
@@ -19,14 +19,15 @@ function App() {
     return fetch("https://fakestoreapi.com/products")
       .then((response) => response.json())
       .then((data) => setUser(data));
-  }
-
+      
   useEffect(() => {
     fetchData();
   }, [])
   console.log(user)
 
   return (
+  <>
+   <Heading />
     <ContainerCard>
       {user?.map((item, index) => (
         <CardItem
@@ -37,6 +38,7 @@ function App() {
         ></CardItem>
       ))}
     </ContainerCard>
+    </>
   );
 }
 
