@@ -1,5 +1,7 @@
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 import React from "react";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import Heading from "./components/Header";
 
 function App() {
@@ -7,16 +9,18 @@ function App() {
 
   const fetchData = () => {
     return fetch("https://fakestoreapi.com/products")
-          .then((response) => response.json())
-          .then((data) => setUser(data));
-  }
+      .then((response) => response.json())
+      .then((data) => setUser(data));
+  };
 
   useEffect(() => {
     fetchData();
-  },[])
-  console.log(user)
+  }, []);
+  console.log(user);
   return (
-    <Heading/>
+    <>
+      <Heading />
+    </>
   );
 }
 
