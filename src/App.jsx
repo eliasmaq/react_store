@@ -1,6 +1,13 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import CardItem from "./components/CardItem";
+import styled from "styled-components";
+
+const ContainerCard = styled("div")`
+  display: flex;
+`;
+
+
 
 import Heading from "./components/Header";
 
@@ -18,10 +25,9 @@ function App() {
     fetchData();
   }, [])
   console.log(user)
+
   return (
-<>
-    <Heading/>
-    <div style={{ display: "flex"}}>
+    <ContainerCard>
       {user?.map((item, index) => (
         <CardItem
           key={index}
@@ -30,8 +36,7 @@ function App() {
           photo={item.image}
         ></CardItem>
       ))}
-    </div>
-    </>
+    </ContainerCard>
   );
 }
 
