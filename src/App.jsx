@@ -9,6 +9,8 @@ const ContainerCard = styled("div")`
 
 
 
+import Heading from "./components/Header";
+
 
 function App() {
   const [user, setUser] = useState(null);
