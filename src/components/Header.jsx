@@ -118,6 +118,7 @@ const ContainerCart = styled.div`
   width: auto;
   margin-right: 39.444px;
   padding-right: 10px;
+  margin-left: 40px;
 `
 
 const BotonCard = styled.div`

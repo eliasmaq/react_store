@@ -30,7 +30,7 @@ const Image = styled.img`
 
 const Main = styled.section`
   background-color: #171717;
-  padding: 0 15rem;
+  padding: 0 2rem;
   margin: 0 auto;
   color: #fff;
 `;
@@ -47,7 +47,7 @@ const Input = styled.div`
 `;
 
 const InputEmail = styled.input`
-  width: 500px;
+  width: 580px;
   outline: none;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
@@ -69,7 +69,8 @@ const Form = styled.form`
 
 const Details = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  justify-items: center;
   color: #fff;
   padding: 3.75rem 0 6rem 0;
 `;
