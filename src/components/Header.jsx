@@ -190,6 +190,7 @@ function Heading() {
           background-color: #f5f5f5;
           border-top: 1px solid #bdd229;
           border-bottom: 1px solid #bdd229;
+          z-index: 10;
         `}
       >
         <ContainerAmburguesaNav>
