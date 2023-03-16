@@ -12,7 +12,7 @@ const Wrapper = styled.footer`
 `;
 
 const Header = styled.section`
-  padding: 0 10px;
+  padding: 1rem 10px;
   background-color: #bdd229;
   width: 100%;
   display: flex;
@@ -23,6 +23,8 @@ const Header = styled.section`
 const Card = styled.div`
   text-align: center;
   padding: 0 10px;
+  width: 355px;
+  font-weight: 700;
 `;
 const Image = styled.img`
   margin: 0 auto;
@@ -69,7 +71,7 @@ const Form = styled.form`
 
 const Details = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-items: center;
   color: #fff;
   padding: 3.75rem 0 6rem 0;
@@ -84,7 +86,7 @@ const Button = styled.button`
   padding: 0.75rem 1.875rem;
   border-radius: 2rem;
   background: #bdd229;
-  transition: background .3s ease;
+  transition: background 0.3s ease;
   &:hover {
     background: #ccdd51;
     cursor: pointer;
@@ -109,12 +111,11 @@ const Links = styled.a`
   background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 48 48' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd%3Bclip-rule:evenodd%3Bstroke-linejoin:round%3Bstroke-miterlimit:2%3B'%3E%3Crect id='redes' x='0' y='0' width='48' height='48' style='fill:none%3B'/%3E%3CclipPath id='_clip1'%3E%3Crect id='redes1' serif:id='redes' x='0' y='0' width='48' height='48'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23_clip1)'%3E%3Cg id='path2320' transform='matrix(0.800006 0 0 0.800006 0.000447471 -0.000580557)'%3E%3Cpath d='M30.214 56.238C26.763 56.238 23.337 55.662 20.031 54.523C13.921 52.418 8.73 48.505 5.414 43.503C2.397 38.952 1.213 33.538 2.058 28.384C2.05 28.389 2.041 28.393 2.033 28.397L0.914 28.437C0.522 28.277 0.218 27.952 0.081 27.547C-0.079 27.075 -0.002 26.533 0.298 26.022C0.798 25.168 1.978 24.382 3.312 23.978C3.727 22.976 4.221 22.011 4.792 21.091C4.72 21.084 4.649 21.078 4.578 21.074L3.638 20.612C3.344 20.275 3.219 19.829 3.294 19.385C3.381 18.876 3.72 18.432 4.247 18.136C4.891 17.773 5.776 17.566 6.675 17.566C6.956 17.566 7.236 17.586 7.513 17.624C8.657 16.455 9.948 15.417 11.36 14.529C14.905 9.418 18.412 5.93 22.075 3.87L22.265 3.763L23.658 3.799L23.843 3.916C25.168 4.753 26.362 6.725 27.568 10.085C27.971 10.069 28.373 10.062 28.767 10.062C33.56 10.062 38.018 11.167 42.382 13.439C44.868 13.063 46.919 12.888 48.805 12.888C51.772 12.888 54.4 13.326 56.84 14.229L57.032 14.3L57.89 15.299L57.931 15.499C58.724 19.374 56.184 26.407 54.713 29.494C54.788 29.835 54.856 30.181 54.913 30.528C57.153 31.174 58.715 32.405 59.416 33.348C59.796 33.86 60.188 34.625 59.899 35.371C59.721 35.828 59.328 36.158 58.845 36.252L57.969 36.127C57.1 35.684 56.158 35.291 55.156 34.959C55.079 36.416 54.848 37.861 54.467 39.281C55.519 40.398 56.248 41.763 56.427 42.998C56.524 43.664 56.539 44.57 56.066 45.117L55.003 45.605C54.933 45.605 54.861 45.601 54.788 45.589L53.905 45.056C53.551 44.577 53.162 44.109 52.739 43.656C52.354 44.379 51.926 45.072 51.461 45.734C48.652 49.726 44.711 52.759 40.063 54.5C36.986 55.654 33.673 56.238 30.214 56.238Z' style='fill:${({
     color,
   }) => color || "rgb(189 210 41)"}%3B'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  transition: filter .5s ease;
+  transition: filter 0.5s ease;
   &:hover {
     filter: brightness(1.55);
   }
 `;
-
 
 const CheckboxTerms = styled.input`
   margin-top: 2px;
@@ -130,7 +131,7 @@ const CheckboxTerms = styled.input`
   &:disabled {
     background-color: #eff;
     background-image: none;
-  } 
+  }
   &:checked {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
     background-color: #555;
@@ -139,11 +140,11 @@ const CheckboxTerms = styled.input`
   &:disabled:checked {
     background-color: rgb(198, 198, 198);
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
-  } 
+  }
   &:hover {
     border: 1px solid #eff;
   }
-`
+`;
 
 const Footer = () => {
   return (
@@ -158,24 +159,27 @@ const Footer = () => {
         </Card>
         <Card>
           <Image
-            src="https://kurogami.com/min/img/testimonios/footer-mechanicaljapan_1.png"
+            src="https://kurogami.com/min/img/testimonios/footer-kotobukiya_1.webp"
             alt="mechanical-logo"
           />
-          <p>Tienda de confianza de Mechanical Japan desde 2010</p>
+          <p>Partnershop de Kotobukiya</p>
         </Card>
         <Card>
           <Image
-            src="https://kurogami.com/min/img/testimonios/footer-mechanicaljapan_1.png"
+            src="https://kurogami.com/min/img/testimonios/footer-goodsmile_1.webp"
             alt="mechanical-logo"
           />
-          <p>Tienda de confianza de Mechanical Japan desde 2010</p>
+          <p>Partnershop de Good Smile Company</p>
         </Card>
         <Card>
           <Image
-            src="https://kurogami.com/min/img/testimonios/footer-mechanicaljapan_1.png"
+            src="https://kurogami.com/min/img/testimonios/footer-catalogo.webp"
             alt="mechanical-logo"
           />
-          <p>Tienda de confianza de Mechanical Japan desde 2010</p>
+          <p>
+            Tenemos un gran catálogo de figuras y merchan de fabricantes
+            oficiales
+          </p>
         </Card>
       </Header>
       <Main>
