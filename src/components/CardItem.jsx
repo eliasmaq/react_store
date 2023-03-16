@@ -24,18 +24,25 @@ const Card = styled("div")`
     position: relative; 
     top: -3px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  &:hover > div > img {
     opacity: 60%;
   }
 `;
 
 const BuyButton = styled("button")`
-  background-color: #BDD229;
+  background: #BDD229;
   color: #000;
   border-radius: 25px;
   border: none;
   font-size: 0.75rem;
   padding: 10px 25px;
   letter-spacing: 2px;
+  transition: background .3s ease;
+  &:hover {
+  background: #ccdd51;
+  cursor: pointer;
+}
 `;
 
 const CardItem = ({ itemName, price, photo }) => {
