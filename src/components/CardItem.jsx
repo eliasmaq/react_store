@@ -7,7 +7,7 @@ const Card = styled("div")`
   font-weight: 200;
   border-radius: 4px;
   justify-content: space-between;
-  width: 100px;
+  width: 115px;
   height: 350px;
   padding: 28px 20px;
   margin: 15px;
