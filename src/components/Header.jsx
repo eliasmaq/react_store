@@ -165,7 +165,7 @@ function Heading() {
             `}
           >
             <Logo
-              src="https://i.postimg.cc/SxBPjnSx/Logo.png"
+              src="https://i.postimg.cc/wjHTCjNn/kurogami.png"
               alt="Logo-store"
             />
             <Input type="text" placeholder="Escribe aquí" />
