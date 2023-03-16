@@ -106,6 +106,36 @@ const Links = styled.a`
   }) => color || "rgb(189 210 41)"}%3B'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 `;
 
+
+const CheckboxTerms = styled.input`
+  margin-top: 2px;
+  cursor: pointer;
+  appearance: none;
+  border: 1px solid #555;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  &:focus {
+    border-color: #eff;
+  }
+  &:disabled {
+    background-color: #eff;
+    background-image: none;
+  } 
+  &:checked {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+    background-color: #555;
+    color: #000;
+  }
+  &:disabled:checked {
+    background-color: rgb(198, 198, 198);
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+  } 
+  &:hover {
+    border: 1px solid #eff;
+  }
+`
+
 const Footer = () => {
   return (
     <Wrapper>
@@ -148,7 +178,7 @@ const Footer = () => {
             <Form>
               <InputEmail type="email" placeholder="E-mail" name="email" />
               <Input>
-                <input type="checkbox" name="terminos" id="terminos" />
+                <CheckboxTerms type="checkbox" name="terminos" id="terminos" />
                 <label htmlFor="terminos">
                   He leído y acepto los términos y condiciones
                 </label>
