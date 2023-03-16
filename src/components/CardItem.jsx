@@ -17,7 +17,7 @@ const Card = styled("div")`
   gap: 2rem;
   color: #000000;
   top: 0px;
-  transition: all .2s linear 0s;
+  transition: all .2s ease 0s;
   text-align: center;
   border-radius: 10px;
   &:hover { 
