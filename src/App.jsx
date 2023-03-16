@@ -5,6 +5,7 @@ import CardItem from "./components/CardItem";
 import styled from "styled-components";
 import Heading from "./components/Header";
 import Footer from "./components/Footer";
+import SimpleSlider from "./components/Carrousel";
 
 const ContainerCard = styled("div")`
   display: flex;
@@ -20,7 +21,7 @@ function App() {
     return fetch("https://fakestoreapi.com/products")
       .then((response) => response.json())
       .then((data) => setUser(data));
-  }
+  };
 
   useEffect(() => {
     fetchData();
@@ -30,6 +31,7 @@ function App() {
   return (
     <>
       <Heading />
+      <SimpleSlider />
       <ContainerCard>
         {user?.map((item, index) => (
           <CardItem
