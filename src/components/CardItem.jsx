@@ -7,10 +7,10 @@ const Card = styled("div")`
   font-weight: 200;
   border-radius: 4px;
   justify-content: space-between;
-  width: 115px;
+  width: 130px;
   height: 350px;
   padding: 28px 20px;
-  margin: 15px;
+  margin: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
