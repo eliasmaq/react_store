@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Card = styled("div")`
+  font-family: Mulish, sans-serif;
   background: #ffffff;
   font-style: normal;
   font-weight: 200;
@@ -16,9 +17,15 @@ const Card = styled("div")`
   gap: 2rem;
   color: #000000;
   top: 0px;
-  transition: top 0.2s ease;
+  transition: all .2s linear 0s;
   text-align: center;
-  &:hover { position: relative; top: -3px; box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25) }
+  border-radius: 10px;
+  &:hover { 
+    position: relative; 
+    top: -3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: 60%;
+  }
 `;
 
 const BuyButton = styled("button")`
